@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaLink | Customer Dashboard</title>
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/customer.frontpage.css">
+</head>
+<body class="loading">
+
+    <div class="app-container">
+        <!-- FIXED LEFT SIDEBAR -->
+        <aside class="sidebar-left animate-sync">
+            <div class="brand">
+                <div class="logo-icon"><i class="fas fa-droplet"></i></div>
+                <span>AquaFlow</span>
+            </div>
+
+            <div class="user-id-card">
+                <div class="avatar-box">
+                    <img src="https://placehold.co/150x150/e2e8f0/475569?text=JM" alt="User">
+                </div>
+                <h3>Joanne M.</h3>
+                <p>Senior Member</p>
+            </div>
+
+            <nav class="side-nav">
+                <a href="#" class="nav-item active"><i class="fas fa-chart-line"></i> Dashboard</a>
+                <a href="#" class="nav-item"><i class="fas fa-users"></i> Active Stations</a>
+                <a href="#" class="nav-item"><i class="fas fa-user-group"></i> Community</a>
+                <a href="#" class="nav-item"><i class="fas fa-clock-rotate-left"></i> Activity</a>
+                <div class="nav-divider">COMMUNICATION</div>
+                <a href="#" class="nav-item"><i class="fas fa-comment-dots"></i> Reachouts</a>
+                <div class="nav-divider">OTHER</div>
+                <a href="#" class="nav-item"><i class="fas fa-gear"></i> Settings</a>
+            </nav>
+        </aside>
+
+        <!-- MAIN SCROLLABLE AREA -->
+        <main class="main-stage">
+            <!-- TOP NAVBAR -->
+            <header class="top-navbar animate-sync">
+                <div class="search-wrapper">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search active stations...">
+                </div>
+                
+                <div class="nav-utility">
+                    <div class="nav-icons">
+                        <!-- My Orders Dropdown -->
+                        <div class="dropdown-wrapper">
+                            <div class="icon-badge" id="orderBtn" title="My Orders">
+                                <i class="fas fa-clipboard-list"></i>
+                            </div>
+                            <div class="dropdown-panel" id="orderDropdown">
+                                <h4>Recent Orders</h4>
+                                <div class="dropdown-item">
+                                    <p><strong>AquaPure Station</strong><br><small>Ref: #7210 • In Transit</small></p>
+                                </div>
+                                <div class="dropdown-item">
+                                    <p><strong>Blue Spring</strong><br><small>Ref: #7199 • Completed</small></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Notification Dropdown -->
+                        <div class="dropdown-wrapper">
+                            <div class="icon-badge" id="notifBtn">
+                                <i class="fas fa-bell"></i>
+                                <span class="count">3</span>
+                            </div>
+                            <div class="dropdown-panel" id="notifDropdown">
+                                <h4>Notifications</h4>
+                                <div class="dropdown-item unread">
+                                    <p>Rider is 2 minutes away!</p>
+                                    <small>Just now</small>
+                                </div>
+                                <div class="dropdown-item">
+                                    <p>Your order was confirmed.</p>
+                                    <small>15 mins ago</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Profile -->
+                        <div class="user-pill" id="profileTrigger">
+                            <span>Joanne M.</span>
+                            <div class="avatar-sm">J</div>
+                            <div class="profile-dropdown" id="profileMenu">
+                                <a href="#"><i class="fas fa-user"></i> Profile</a>
+                                <a href="frontpage.html" class="logout"><i class="fas fa-power-off"></i> Logout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="dashboard-scroll-body">
+                <!-- BLUE HEADER STRIP -->
+                <div class="dashboard-header-strip animate-sync">
+                    <div class="client-brand">
+                        <div class="client-logo">AC</div>
+                        <div class="client-name">
+                            <h2>Your Dashboard</h2>
+                            <nav class="header-sub-nav">
+                                <a href="#" class="active">OVERVIEW</a>
+                                <a href="#">REPORTS</a>
+                                <a href="#">SCHEDULE</a>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="header-charts">
+                        <div class="circular-stat">
+                            <svg viewBox="0 0 36 36" class="circular-chart">
+                                <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                <path class="circle" stroke-dasharray="82, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            </svg>
+                            <div class="percentage">82%</div>
+                        </div>
+                        <div class="bar-preview">
+                            <div class="b-p" style="height: 40%"></div>
+                            <div class="b-p" style="height: 70%"></div>
+                            <div class="b-p" style="height: 50%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-inner">
+                    <div class="section-heading animate-sync">
+                        <div class="heading-left">
+                            <h3>Dashboard</h3>
+                            <button class="btn-orders-primary" id="viewOrdersTrigger"><i class="fas fa-list-check"></i> View My Orders</button>
+                        </div>
+                        <div class="view-controls">
+                            <button class="icon-btn active"><i class="far fa-eye"></i></button>
+                            <button class="icon-btn"><i class="fas fa-link"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="grid-label animate-sync">Active Stations <a href="#">show all</a></div>
+                    
+                    <div class="station-grid animate-sync">
+                        <!-- Card 1 -->
+                        <div class="station-card">
+                            <div class="card-visual s1">
+                                <div class="card-logo">A1</div>
+                                <span class="badge">Online</span>
+                            </div>
+                            <div class="card-body">
+                                <h4>AquaPure Station</h4>
+                                <p>Standard Refill • 0.5km</p>
+                                <div class="card-meta">
+                                    <div class="qty-box">1</div>
+                                    <span class="avatar-stack">+23</span>
+                                    <button class="btn-order" onclick="openOrderModal('AquaPure')">Order</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="station-card">
+                            <div class="card-visual s2">
+                                <div class="card-logo">C1</div>
+                                <span class="badge">Online</span>
+                            </div>
+                            <div class="card-body">
+                                <h4>Crystal Clear</h4>
+                                <p>UV Purified • 1.2km</p>
+                                <div class="card-meta">
+                                    <div class="qty-box">1</div>
+                                    <span class="avatar-stack">+15</span>
+                                    <button class="btn-order" onclick="openOrderModal('Crystal Clear')">Order</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="station-card">
+                            <div class="card-visual s3">
+                                <div class="card-logo">B1</div>
+                                <span class="badge">Online</span>
+                            </div>
+                            <div class="card-body">
+                                <h4>Blue Spring</h4>
+                                <p>Mineral Water • 2.0km</p>
+                                <div class="card-meta">
+                                    <div class="qty-box">1</div>
+                                    <span class="avatar-stack">+42</span>
+                                    <button class="btn-order" onclick="openOrderModal('Blue Spring')">Order</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- RIGHT SIDEBAR -->
+        <aside class="sidebar-right animate-sync">
+            <div class="rs-group">
+                <div class="rs-header">TOP PARTNERS</div>
+                <div class="partner-item"><span class="p-icon p1">DA</span> Danone</div>
+                <div class="partner-item"><span class="p-icon p2">GE</span> General</div>
+            </div>
+            <div class="rs-group">
+                <div class="rs-header">ACTIVE RIDERS</div>
+                <div class="contact-item">
+                    <div class="avatar-sm">R</div>
+                    <div class="c-info"><h5>Rider 09</h5><p>Nearby</p></div>
+                    <div class="status-dot online"></div>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- FLOATING CHAT -->
+    <div class="chat-container" id="chatContainer">
+        <div class="chat-window" id="chatWindow">
+            <div class="chat-header">
+                <span>Support Chat</span>
+                <button id="closeChat"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chat-body">
+                <div class="msg received">How can we help you today?</div>
+            </div>
+            <div class="chat-footer">
+                <input type="text" placeholder="Type message...">
+                <button><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+        <button class="chat-trigger" id="chatToggle">
+            <i class="fas fa-comment-dots"></i>
+        </button>
+    </div>
+
+    <!-- MODAL -->
+    <div class="modal-overlay" id="orderModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Place Order</h3>
+                <button onclick="closeModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Ordering from <strong id="selectedStation">Station</strong></p>
+                <div class="form-row">
+                    <label>Quantity</label>
+                    <input type="number" value="1" min="1">
+                </div>
+                <button class="btn-confirm" onclick="confirmOrder()">Confirm Order</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="script/customer.frontpage.js"></script>
+</body>
+</html>

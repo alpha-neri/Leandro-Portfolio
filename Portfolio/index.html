@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEANDRO | AI Developer & UI/UX Expert</title>
+    
+    <!-- Scripts & Fonts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-slate-50 text-slate-900 dark:bg-darkBg dark:text-zinc-100">
+
+    <!-- TOP SCROLL PROGRESS BAR -->
+    <div id="scroll-progress" class="fixed top-0 left-0 h-1.5 bg-primary z-[100] transition-all duration-150 ease-out" style="width: 0%"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 px-6 py-6">
+        <div class="max-w-6xl mx-auto flex justify-between items-center glass rounded-[2rem] px-6 md:px-10 py-4 shadow-2xl shadow-blue-500/5">
+            <div class="font-extrabold text-2xl tracking-tighter heading-font uppercase italic">
+                LEANDRO<span class="text-primary">.</span>
+            </div>
+            
+            <div class="hidden md:flex gap-10 text-[11px] font-bold uppercase tracking-[0.2em] opacity-60">
+                <a href="#experience" class="hover:text-primary transition">Experience</a>
+                <a href="#expertise" class="hover:text-primary transition">Expertise</a>
+                <a href="#projects" class="hover:text-primary transition">Projects</a>
+                <a href="#awards" class="hover:text-primary transition">Awards</a>
+            </div>
+
+            <div class="flex items-center gap-5">
+                <button id="theme-toggle" class="p-2.5 rounded-xl bg-slate-100 dark:bg-zinc-800 text-slate-600 dark:text-zinc-300 transition-all hover:scale-110">
+                    <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                    <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"></path></svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen pt-40 pb-20 px-6 overflow-hidden">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+            <div class="lg:col-span-8 reveal">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-500/10 border border-primary/20 mb-8">
+                    <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                    <span class="text-[10px] font-bold uppercase tracking-widest text-primary">Available for Opportunities</span>
+                </div>
+                <h1 class="heading-font text-6xl md:text-9xl font-bold leading-[0.9] tracking-tighter mb-8 text-slate-900 dark:text-white">
+                    Designing <br/><span class="text-primary italic">Intelligence.</span>
+                </h1>
+                <p class="text-xl text-slate-500 dark:text-zinc-400 max-w-xl mb-12 leading-relaxed font-medium text-center md:text-left">
+I am <span class="text-slate-900 dark:text-white font-bold">Leandro Neri</span>, an AI-focused Developer and a graduate of Cebu Eastern College with a Bachelor of Science in Information Technology (BSIT). I specialize in merging Prompt Engineering and Full-Stack Logic with high-end UI/UX design.                </p>
+                <div class="flex flex-wrap gap-6 items-center justify-center md:justify-start">
+                    <a href="#projects" class="bg-zinc-900 dark:bg-white dark:text-black text-white px-10 py-5 rounded-2xl font-bold text-sm uppercase tracking-widest hover:scale-105 transition shadow-xl shadow-blue-500/10">View Projects</a>
+                    <a href="Resume(NERI).pdf" download="Resume(NERI).pdf" class="flex items-center gap-3 border border-zinc-200 dark:border-zinc-800 px-8 py-5 rounded-2xl font-bold text-sm uppercase tracking-widest hover:bg-white dark:hover:bg-zinc-800 transition">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                        Download Resume
+                    </a>
+                </div>
+            </div>
+            
+            <div class="lg:col-span-4 reveal" style="transition-delay: 0.2s;">
+                <div class="relative group">
+                    <div class="absolute -inset-4 bg-gradient-to-r from-primary to-indigo-500 rounded-[3rem] blur-2xl opacity-10 group-hover:opacity-30 transition duration-1000"></div>
+                    <div class="relative bg-white dark:bg-darkCard rounded-[3rem] p-3 border border-zinc-200 dark:border-zinc-800 shadow-2xl">
+                        <img src="ayan.jpg" alt="Leandro" class="rounded-[2.5rem] w-full aspect-[4/5] object-cover grayscale hover:grayscale-0 transition duration-700">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Spotlight -->
+    <section id="experience" class="py-32 bg-white dark:bg-zinc-900/20 border-y border-zinc-200 dark:border-zinc-900">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+                <div class="reveal text-center md:text-left">
+                    <p class="text-primary font-bold uppercase text-xs tracking-[0.3em] mb-4">Professional Milestone</p>
+                    <h2 class="heading-font text-5xl font-bold mb-8 tracking-tight italic dark:text-white text-slate-900">AI Developer Intern <br/>@ Lifewood</h2>
+                    <p class="text-slate-500 dark:text-zinc-400 text-lg leading-relaxed mb-10">
+                        At Lifewood, I optimized **Prompt Engineering** workflows to enhance data accuracy and automate complex labeling tasks, bridging raw data and machine learning excellence.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6 text-center">
+                        <div class="p-8 rounded-[2rem] bg-slate-50 dark:bg-zinc-800/40 border border-zinc-200 dark:border-zinc-800 shadow-sm">
+                            <h4 class="font-bold text-3xl text-primary mb-1 tracking-tighter">90%</h4>
+                            <p class="text-[9px] font-bold uppercase text-slate-400 tracking-widest">Accuracy Focus</p>
+                        </div>
+                        <div class="p-8 rounded-[2rem] bg-slate-50 dark:bg-zinc-800/40 border border-zinc-200 dark:border-zinc-800 shadow-sm">
+                            <h4 class="font-bold text-3xl text-primary mb-1 tracking-tighter">AI + UI</h4>
+                            <p class="text-[9px] font-bold uppercase text-slate-400 tracking-widest">Workflow Design</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reveal relative p-[1px] bg-gradient-to-br from-primary/40 via-secondary/20 to-transparent rounded-[3.5rem]">
+                    <div class="bg-white dark:bg-darkBg rounded-[3.4rem] p-10 md:p-14 overflow-hidden relative shadow-inner">
+                        <div class="relative z-10">
+                            <div class="inline-block px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-[10px] font-bold uppercase tracking-widest mb-10">Strategic Impact</div>
+                            <h3 class="heading-font text-4xl font-bold mb-6 dark:text-white tracking-tighter">Core Impact</h3>
+                            <blockquote class="text-xl md:text-2xl font-medium leading-relaxed italic text-slate-700 dark:text-zinc-300 mb-10">
+                                "Automating the future through precision <span class="text-primary not-italic font-extrabold border-b-2 border-primary/20">prompt engineering</span> and scalable AI systems."
+                            </blockquote>
+                            <div class="flex items-center gap-4 text-slate-400 opacity-50 justify-center md:justify-start">
+                                <span class="h-[1px] w-12 bg-primary"></span>
+                                <p class="text-[10px] font-bold uppercase tracking-[0.2em]">Systemic Optimization</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Expertise -->
+    <section id="expertise" class="pt-32 pb-16 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-24 reveal">
+                <h2 class="text-primary font-bold uppercase text-xs tracking-[0.4em] mb-4">Technical Expertise</h2>
+                <h3 class="heading-font text-5xl md:text-7xl font-bold tracking-tighter dark:text-white">The Toolkit</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div class="md:col-span-2 md:row-span-2 bg-white dark:bg-darkCard p-10 md:p-12 rounded-[3.5rem] border border-zinc-200 dark:border-zinc-800 bento-item group relative overflow-hidden shadow-sm">
+                    <div class="absolute -right-10 -top-10 text-[14rem] font-black opacity-[0.03] text-primary group-hover:opacity-10 transition duration-700">UI</div>
+                    <div class="relative z-10">
+                        <h4 class="text-3xl font-bold mb-8 heading-font dark:text-white">UI/UX Design <span class="text-primary italic">& Figma</span></h4>
+                        <div class="space-y-10">
+                            <div class="group/bar">
+                                <div class="flex justify-between text-[10px] font-bold uppercase tracking-widest mb-3 opacity-60 group-hover/bar:text-primary transition"><span>Aesthetic & Visuals</span><span>95%</span></div>
+                                <div class="h-1.5 w-full bg-slate-100 dark:bg-zinc-800 rounded-full overflow-hidden"><div class="h-full bg-primary w-[95%]"></div></div>
+                            </div>
+                            <div class="group/bar">
+                                <div class="flex justify-between text-[10px] font-bold uppercase tracking-widest mb-3 opacity-60 group-hover/bar:text-primary transition"><span>Interaction Design</span><span>90%</span></div>
+                                <div class="h-1.5 w-full bg-slate-100 dark:bg-zinc-800 rounded-full overflow-hidden"><div class="h-full bg-primary w-[90%] opacity-80"></div></div>
+                            </div>
+                            <div class="group/bar">
+                                <div class="flex justify-between text-[10px] font-bold uppercase tracking-widest mb-3 opacity-60 group-hover/bar:text-primary transition"><span>Design Systems</span><span>92%</span></div>
+                                <div class="h-1.5 w-full bg-slate-100 dark:bg-zinc-800 rounded-full overflow-hidden"><div class="h-full bg-primary w-[92%] opacity-90"></div></div>
+                            </div>
+                            <div class="group/bar">
+                                <div class="flex justify-between text-[10px] font-bold uppercase tracking-widest mb-3 opacity-60 group-hover/bar:text-primary transition"><span>User Research</span><span>85%</span></div>
+                                <div class="h-1.5 w-full bg-slate-100 dark:bg-zinc-800 rounded-full overflow-hidden"><div class="h-full bg-primary w-[85%] opacity-70"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:col-span-2 bg-zinc-900 text-white p-12 rounded-[3rem] bento-item border border-zinc-800 shadow-2xl relative group overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition"></div>
+                    <h4 class="text-2xl font-bold mb-4 heading-font italic">Full-Stack Logic</h4>
+                    <p class="text-zinc-400 text-sm mb-10 font-medium">Developing robust backends and clean code architectures.</p>
+                    <div class="flex flex-wrap gap-3 relative z-10">
+                        <span class="px-5 py-2.5 bg-white/5 border border-white/10 rounded-2xl text-[10px] font-bold uppercase tracking-widest hover:bg-primary transition">PHP</span>
+                        <span class="px-5 py-2.5 bg-white/5 border border-white/10 rounded-2xl text-[10px] font-bold uppercase tracking-widest hover:bg-primary transition">Laravel</span>
+                        <span class="px-5 py-2.5 bg-white/5 border border-white/10 rounded-2xl text-[10px] font-bold uppercase tracking-widest hover:bg-primary transition">MySQL</span>
+                    </div>
+                </div>
+
+                <div class="bg-primary p-12 rounded-[3rem] bento-item text-white flex flex-col justify-between shadow-2xl shadow-primary/20">
+                    <div class="text-5xl font-black italic opacity-30">AI</div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-2 uppercase tracking-tighter">AI Integration</h4>
+                        <p class="text-white/70 text-sm font-medium">Prompt Engineering Specialist.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white dark:bg-darkCard p-12 rounded-[3rem] border border-zinc-200 dark:border-zinc-800 bento-item shadow-sm">
+                    <h4 class="text-xl font-bold mb-8 italic dark:text-white">Core Tech</h4>
+                    <div class="space-y-5 text-[11px] font-bold uppercase tracking-widest opacity-60 dark:text-zinc-400">
+                        <p class="flex items-center gap-3"><span class="w-2 h-2 bg-primary rounded-full"></span> JS (ES6)</p>
+                        <p class="flex items-center gap-3"><span class="w-2 h-2 bg-primary rounded-full"></span> HTML / CSS</p>
+                        <p class="flex items-center gap-3"><span class="w-2 h-2 bg-primary rounded-full"></span> Python</p>
+                        <p class="flex items-center gap-3"><span class="w-2 h-2 bg-primary rounded-full"></span> Figma</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS GALLERY -->
+    <section id="projects" class="pt-12 pb-32 bg-slate-50 dark:bg-darkBg">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center md:items-end mb-20 gap-8 reveal text-center md:text-left">
+                <div>
+                    <h2 class="text-primary font-bold uppercase text-xs tracking-[0.4em] mb-4">Portfolio</h2>
+                    <h3 class="heading-font text-5xl md:text-7xl font-bold tracking-tighter dark:text-white">Selected Works</h3>
+                </div>
+                <p class="text-slate-500 dark:text-zinc-400 max-w-xs text-sm font-medium">A showcase of AI-integrated systems and high-performance web applications.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <!-- Project 1 -->
+                <a href="https://lifewood-amaze.vercel.app/" target="_blank" class="reveal project-card group relative overflow-hidden bg-white dark:bg-darkCard rounded-[3.5rem] border border-zinc-200 dark:border-zinc-800 block shadow-sm hover:shadow-2xl transition-all duration-500">
+                    <div class="aspect-video bg-zinc-100 dark:bg-zinc-800 overflow-hidden relative">
+                        <img src="Lifewood.png" alt="Lifewood Amaze" class="project-image w-full h-full object-cover transition-all duration-700">
+                        <div class="absolute inset-0 bg-primary/40 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center">
+                            <span class="bg-white dark:bg-zinc-900 px-8 py-3 rounded-full font-bold text-xs uppercase tracking-[0.2em] shadow-2xl dark:text-white scale-90 group-hover:scale-100 transition-transform duration-500">Launch Site</span>
+                        </div>
+                    </div>
+                    <div class="p-10">
+                        <div class="flex gap-3 mb-5 overflow-hidden justify-center md:justify-start">
+                            <span class="tag text-[9px] font-bold px-4 py-1.5 bg-blue-500/10 text-primary rounded-full uppercase tracking-widest transform translate-y-0 group-hover:-translate-y-1 transition-all duration-300">AI Platform</span>
+                            <span class="tag text-[9px] font-bold px-4 py-1.5 bg-blue-500/10 text-primary rounded-full uppercase tracking-widest transform translate-y-0 group-hover:-translate-y-1 transition-all duration-300 delay-75">Next.js</span>
+                        </div>
+                        <h4 class="text-2xl font-bold mb-3 heading-font dark:text-white group-hover:text-primary transition-colors">Lifewood Amaze</h4>
+                        <p class="text-slate-500 dark:text-zinc-400 text-sm leading-relaxed">Enterprise AI workflow solution designed for large-scale data processing and intelligence labeling.</p>
+                    </div>
+                </a>
+
+                <!-- Project 2 -->
+                <a href="https://travel-badi.vercel.app/" target="_blank" class="reveal project-card group relative overflow-hidden bg-white dark:bg-darkCard rounded-[3.5rem] border border-zinc-200 dark:border-zinc-800 block shadow-sm hover:shadow-2xl transition-all duration-500" style="transition-delay: 0.1s;">
+                    <div class="aspect-video bg-zinc-100 dark:bg-zinc-800 overflow-hidden relative">
+                        <img src="Travel.png" alt="Travel Badi" class="project-image w-full h-full object-cover transition-all duration-700">
+                        <div class="absolute inset-0 bg-primary/40 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center">
+                             <span class="bg-white dark:bg-zinc-900 px-8 py-3 rounded-full font-bold text-xs uppercase tracking-[0.2em] shadow-2xl dark:text-white scale-90 group-hover:scale-100 transition-transform duration-500">Launch Site</span>
+                        </div>
+                    </div>
+                    <div class="p-10">
+                        <div class="flex gap-3 mb-5 overflow-hidden justify-center md:justify-start">
+                            <span class="tag text-[9px] font-bold px-4 py-1.5 bg-blue-500/10 text-primary rounded-full uppercase tracking-widest transform translate-y-0 group-hover:-translate-y-1 transition-all duration-300">Travel UX</span>
+                            <span class="tag text-[9px] font-bold px-4 py-1.5 bg-blue-500/10 text-primary rounded-full uppercase tracking-widest transform translate-y-0 group-hover:-translate-y-1 transition-all duration-300 delay-75">React</span>
+                        </div>
+                        <h4 class="text-2xl font-bold mb-3 heading-font dark:text-white group-hover:text-primary transition-colors">Travel Badi</h4>
+                        <p class="text-slate-500 dark:text-zinc-400 text-sm leading-relaxed">A specialized community platform for modern travelers focusing on shared experiences and seamless planning.</p>
+                    </div>
+                </a>
+
+                <!-- Project 3 -->
+                <a href="galactice-pulse.html" class="reveal project-card group relative overflow-hidden bg-white dark:bg-darkCard rounded-[3.5rem] border border-zinc-200 dark:border-zinc-800 block shadow-sm hover:shadow-2xl transition-all duration-500" style="transition-delay: 0.2s;">
+                    <div class="aspect-video bg-zinc-100 dark:bg-zinc-800 overflow-hidden relative">
+                        <img src="galactic_ss/frontpage.png" alt="Galactic Pulse" class="project-image w-full h-full object-cover transition-all duration-700">
+                        <div class="absolute inset-0 bg-primary/40 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center">
+                             <span class="bg-white dark:bg-zinc-900 px-8 py-3 rounded-full font-bold text-xs uppercase tracking-[0.2em] shadow-2xl dark:text-white scale-90 group-hover:scale-100 transition-transform duration-500">View Project</span>
+                        </div>
+                    </div>
+                    <div class="p-10">
+                        <div class="flex gap-3 mb-5 overflow-hidden justify-center md:justify-start">
+                            <span class="tag text-[9px] font-bold px-4 py-1.5 bg-blue-500/10 text-primary rounded-full uppercase tracking-widest transform translate-y-0 group-hover:-translate-y-1 transition-all duration-300">Interactive</span>
+                            <span class="tag text-[9px] font-bold px-4 py-1.5 bg-blue-500/10 text-primary rounded-full uppercase tracking-widest transform translate-y-0 group-hover:-translate-y-1 transition-all duration-300 delay-75">UI/UX</span>
+                        </div>
+                        <h4 class="text-2xl font-bold mb-3 heading-font dark:text-white group-hover:text-primary transition-colors">Galactic Pulse</h4>
+                        <p class="text-slate-500 dark:text-zinc-400 text-sm leading-relaxed">An immersive digital experience exploring cosmic data through fluid motion and high-end visual aesthetics.</p>
+                    </div>
+                </a>
+
+                <!-- Project 4 -->
+                <a href="snake-arcade.html" class="reveal project-card group relative overflow-hidden bg-white dark:bg-darkCard rounded-[3.5rem] border border-zinc-200 dark:border-zinc-800 block shadow-sm hover:shadow-2xl transition-all duration-500" style="transition-delay: 0.3s;">
+                    <div class="aspect-video bg-zinc-100 dark:bg-zinc-800 overflow-hidden relative">
+                        <img src="snakegame_ss/frontpage.png" alt="Snake Arcade" class="project-image w-full h-full object-cover transition-all duration-700">
+                        <div class="absolute inset-0 bg-primary/40 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center">
+                             <span class="bg-white dark:bg-zinc-900 px-8 py-3 rounded-full font-bold text-xs uppercase tracking-[0.2em] shadow-2xl dark:text-white scale-90 group-hover:scale-100 transition-transform duration-500">View Project</span>
+                        </div>
+                    </div>
+                    <div class="p-10">
+                        <div class="flex gap-3 mb-5 overflow-hidden justify-center md:justify-start">
+                            <span class="tag text-[9px] font-bold px-4 py-1.5 bg-blue-500/10 text-primary rounded-full uppercase tracking-widest transform translate-y-0 group-hover:-translate-y-1 transition-all duration-300">Game Dev</span>
+                            <span class="tag text-[9px] font-bold px-4 py-1.5 bg-blue-500/10 text-primary rounded-full uppercase tracking-widest transform translate-y-0 group-hover:-translate-y-1 transition-all duration-300 delay-75">Logic</span>
+                        </div>
+                        <h4 class="text-2xl font-bold mb-3 heading-font dark:text-white group-hover:text-primary transition-colors">Snake Arcade</h4>
+                        <p class="text-slate-500 dark:text-zinc-400 text-sm leading-relaxed">A modern reimagining of the classic arcade staple featuring sharp minimalist design and responsive controls.</p>
+                    </div>
+                </a>
+
+                <!-- Project 5 -->
+                <a href="tetris-game.html" class="reveal project-card group relative overflow-hidden bg-white dark:bg-darkCard rounded-[3.5rem] border border-zinc-200 dark:border-zinc-800 block shadow-sm hover:shadow-2xl transition-all duration-500" style="transition-delay: 0.3s;">
+                    <div class="aspect-video bg-zinc-100 dark:bg-zinc-800 overflow-hidden relative">
+                        <img src="tetris_ss/ingame1.png" alt="Tetris Arcade" class="project-image w-full h-full object-cover transition-all duration-700">
+                        <div class="absolute inset-0 bg-primary/40 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center">
+                             <span class="bg-white dark:bg-zinc-900 px-8 py-3 rounded-full font-bold text-xs uppercase tracking-[0.2em] shadow-2xl dark:text-white scale-90 group-hover:scale-100 transition-transform duration-500">View Project</span>
+                        </div>
+                    </div>
+                    <div class="p-10">
+                        <div class="flex gap-3 mb-5 overflow-hidden justify-center md:justify-start">
+                            <span class="tag text-[9px] font-bold px-4 py-1.5 bg-blue-500/10 text-primary rounded-full uppercase tracking-widest transform translate-y-0 group-hover:-translate-y-1 transition-all duration-300">Game Dev</span>
+                            <span class="tag text-[9px] font-bold px-4 py-1.5 bg-blue-500/10 text-primary rounded-full uppercase tracking-widest transform translate-y-0 group-hover:-translate-y-1 transition-all duration-300 delay-75">Logic</span>
+                        </div>
+                        <h4 class="text-2xl font-bold mb-3 heading-font dark:text-white group-hover:text-primary transition-colors">Tetris Arcade</h4>
+                        <p class="text-slate-500 dark:text-zinc-400 text-sm leading-relaxed">A modern reimagining of the classic tetris arcade staple featuring smooth minimalist responsive controls.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW AWARDS SECTION -->
+    <section id="awards" class="py-32 bg-white dark:bg-darkBg border-t border-zinc-100 dark:border-zinc-900">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center md:items-end mb-20 gap-8 reveal text-center md:text-left">
+                <div>
+                    <h2 class="text-primary font-bold uppercase text-xs tracking-[0.4em] mb-4">Recognition</h2>
+                    <h3 class="heading-font text-5xl md:text-7xl font-bold tracking-tighter dark:text-white">Certifications</h3>
+                </div>
+                <p class="text-slate-500 dark:text-zinc-400 max-w-xs text-sm font-medium">Official recognition for technical proficiency and participation in the tech ecosystem.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Award 1 -->
+                <div class="reveal project-card group relative cursor-pointer overflow-hidden bg-white dark:bg-darkCard rounded-[3rem] border border-zinc-200 dark:border-zinc-800 block cert-trigger shadow-sm hover:shadow-2xl transition-all duration-500">
+                    <div class="aspect-[4/3] bg-zinc-100 dark:bg-zinc-800 overflow-hidden relative">
+                        <img src="Awards/COC.jpg" alt="Lifewood Certificate" class="project-image w-full h-full object-cover transition-all duration-700">
+                        <div class="absolute inset-0 bg-primary/40 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center">
+                             <span class="bg-white dark:bg-zinc-900 px-6 py-2 rounded-full font-bold text-[10px] uppercase tracking-widest shadow-xl dark:text-white scale-90 group-hover:scale-100 transition-all duration-500">Expand View</span>
+                        </div>
+                    </div>
+                    <div class="p-10">
+                        <div class="flex gap-3 mb-4 overflow-hidden justify-center md:justify-start">
+                            <span class="tag text-[9px] font-bold px-3 py-1 bg-blue-500/10 text-primary rounded-full uppercase tracking-widest transform translate-y-0 group-hover:-translate-y-1 transition-all duration-300">Internship</span>
+                        </div>
+                        <h4 class="text-2xl font-bold mb-3 heading-font dark:text-white group-hover:text-primary transition-colors">Lifewood COC</h4>
+                        <p class="text-slate-500 dark:text-zinc-400 text-sm leading-relaxed">600 hours of AI Developer internship completion.</p>
+                    </div>
+                </div>
+
+                <!-- Award 2 -->
+                <div class="reveal project-card group relative cursor-pointer overflow-hidden bg-white dark:bg-darkCard rounded-[3rem] border border-zinc-200 dark:border-zinc-800 block cert-trigger shadow-sm hover:shadow-2xl transition-all duration-500" style="transition-delay: 0.1s;">
+                    <div class="aspect-[4/3] bg-zinc-100 dark:bg-zinc-800 overflow-hidden relative">
+                        <img src="Awards/CORHACKATHON.jpg" alt="Hackathon Certificate" class="project-image w-full h-full object-cover transition-all duration-700">
+                        <div class="absolute inset-0 bg-primary/40 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center">
+                             <span class="bg-white dark:bg-zinc-900 px-6 py-2 rounded-full font-bold text-[10px] uppercase tracking-widest shadow-xl dark:text-white scale-90 group-hover:scale-100 transition-all duration-500">Expand View</span>
+                        </div>
+                    </div>
+                    <div class="p-10">
+                        <div class="flex gap-3 mb-4 overflow-hidden justify-center md:justify-start">
+                            <span class="tag text-[9px] font-bold px-3 py-1 bg-blue-500/10 text-primary rounded-full uppercase tracking-widest transform translate-y-0 group-hover:-translate-y-1 transition-all duration-300">Hackathon</span>
+                        </div>
+                        <h4 class="text-2xl font-bold mb-3 heading-font dark:text-white group-hover:text-primary transition-colors">PromptQuest</h4>
+                        <p class="text-slate-500 dark:text-zinc-400 text-sm leading-relaxed">Active participation in intercollegiate Hackathon.</p>
+                    </div>
+                </div>
+
+                <!-- Award 3 -->
+                <div class="reveal project-card group relative cursor-pointer overflow-hidden bg-white dark:bg-darkCard rounded-[3rem] border border-zinc-200 dark:border-zinc-800 block cert-trigger shadow-sm hover:shadow-2xl transition-all duration-500" style="transition-delay: 0.2s;">
+                    <div class="aspect-[4/3] bg-zinc-100 dark:bg-zinc-800 overflow-hidden relative">
+                        <img src="Awards/COR.jpg" alt="CEC Recognition" class="project-image w-full h-full object-cover transition-all duration-700">
+                        <div class="absolute inset-0 bg-primary/40 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center">
+                             <span class="bg-white dark:bg-zinc-900 px-6 py-2 rounded-full font-bold text-[10px] uppercase tracking-widest shadow-xl dark:text-white scale-90 group-hover:scale-100 transition-all duration-500">Expand View</span>
+                        </div>
+                    </div>
+                    <div class="p-10">
+                        <div class="flex gap-3 mb-4 overflow-hidden justify-center md:justify-start">
+                            <span class="tag text-[9px] font-bold px-3 py-1 bg-blue-500/10 text-primary rounded-full uppercase tracking-widest transform translate-y-0 group-hover:-translate-y-1 transition-all duration-300">Department Activity</span>
+                        </div>
+                        <h4 class="text-2xl font-bold mb-3 heading-font dark:text-white group-hover:text-primary transition-colors">Arbotics Recognition</h4>
+                        <p class="text-slate-500 dark:text-zinc-400 text-sm leading-relaxed">Recognition for CEC IT Wizards participation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer id="contact" class="bg-white dark:bg-darkBg pt-40 pb-16 border-t border-zinc-200 dark:border-zinc-900 px-6 overflow-hidden relative">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-16 items-start mb-32">
+                <div class="md:col-span-8 reveal text-center md:text-left">
+                    <h2 class="heading-font text-6xl md:text-9xl font-bold tracking-tighter dark:text-white leading-[0.9] mb-12 text-slate-900">
+                        Let's build <br/><span class="text-primary italic">the future.</span>
+                    </h2>
+                    <div class="max-w-md mx-auto md:mx-0">
+                        <p class="text-slate-500 dark:text-zinc-400 text-lg mb-12 font-medium">
+                            Combining AI automation with studio-grade UI excellence. Ready for collaborations and new opportunities.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="md:col-span-4 flex flex-col md:items-end gap-16 reveal" style="transition-delay: 0.2s;">
+                    <div class="flex flex-col gap-12 text-center md:text-right">
+                        <div>
+                            <h5 class="text-[11px] font-bold uppercase tracking-[0.4em] text-blue-400/80 dark:text-blue-400/60 mb-6">Explore</h5>
+                            <ul class="space-y-4 font-medium text-[16px] text-slate-700 dark:text-zinc-200">
+                                <li><a href="#experience" class="flex items-center justify-center md:justify-end gap-3 hover:text-primary transition">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                    Experience</a></li>
+                                <li><a href="#expertise" class="flex items-center justify-center md:justify-end gap-3 hover:text-primary transition">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                                    Expertise</a></li>
+                                <li><a href="#projects" class="flex items-center justify-center md:justify-end gap-3 hover:text-primary transition">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path></svg>
+                                    Works</a></li>
+                                <li><a href="#awards" class="flex items-center justify-center md:justify-end gap-3 hover:text-primary transition">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
+                                    Awards</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="text-[11px] font-bold uppercase tracking-[0.4em] text-blue-400/80 dark:text-blue-400/60 mb-6">Socials</h5>
+                            <ul class="space-y-4 font-bold text-[16px] text-slate-900 dark:text-white uppercase tracking-wider">
+                                <li><a href="https://www.instagram.com/not.leannnn/" class="flex items-center justify-center md:justify-end gap-3 hover:text-primary transition">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 2H17C19.7614 2 22 4.23858 22 7V17C22 19.7614 19.7614 22 17 22H7C4.23858 22 2 19.7614 2 17V7C2 4.23858 4.23858 2 7 2ZM12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7ZM18.5 6.25C18.5 6.66421 18.1642 7 17.75 7C17.3358 7 17 6.66421 17 6.25C17 5.83579 17.3358 5.5 17.75 5.5C18.1642 5.5 18.5 5.83579 18.5 6.25ZM12 9C13.6569 9 15 10.3431 15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9Z" fill="currentColor" stroke="none"></path></svg>
+                                    INSTAGRAM</a></li>
+                                <li><a href="https://www.facebook.com/ayanneri22" class="flex items-center justify-center md:justify-end gap-3 hover:text-primary transition">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg>
+                                    FACEBOOK</a></li>
+                                <li><a href="mailto:ayanneri11@gmail.com" class="flex items-center justify-center md:justify-end gap-3 hover:text-primary transition">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                                    GMAIL</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-between items-center pt-16 border-t border-zinc-100 dark:border-zinc-900 gap-8 relative z-10">
+                <div class="text-[10px] font-bold uppercase tracking-[0.4em] opacity-30 text-center md:text-left">
+                    &copy; 2026 LEANDRO &bull; Powered by Studio Logic & AI
+                </div>
+                <button onclick="window.scrollTo(0,0)" class="w-16 h-16 rounded-full border border-zinc-200 dark:border-zinc-800 flex items-center justify-center hover:bg-primary hover:text-white transition duration-500 shadow-xl group">
+                    <span class="group-hover:-translate-y-1 transition duration-300">↑</span>
+                </button>
+            </div>
+        </div>
+        <div class="absolute bottom-[-100px] right-[-50px] heading-font text-[20rem] font-black italic opacity-[0.02] dark:opacity-[0.03] select-none pointer-events-none">DEV</div>
+    </footer>
+
+    <!-- MODAL / LIGHTBOX -->
+    <div id="cert-modal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4 md:p-10 bg-slate-900/90 backdrop-blur-xl opacity-0 transition-opacity duration-300">
+        <button id="close-modal" class="absolute top-6 right-6 md:top-10 md:right-10 z-[110] w-12 h-12 rounded-full bg-white/10 hover:bg-primary text-white flex items-center justify-center transition-all hover:rotate-90">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+        <div id="modal-container" class="relative max-w-5xl w-full transform scale-90 opacity-0 transition-all duration-300">
+            <div class="bg-white dark:bg-darkCard p-2 rounded-[2rem] shadow-2xl overflow-hidden">
+                <img id="modal-img" src="" alt="Certificate View" class="w-full h-auto rounded-[1.8rem]">
+            </div>
+        </div>
+    </div>
+
+    <!-- External JavaScript -->
+    <script src="script/script.js"></script>
+</body>
+</html>

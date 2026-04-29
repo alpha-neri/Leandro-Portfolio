@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaFlow | Seller Dashboard</title>
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/seller.frontpage.css">
+    
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6.4.0 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <!-- SIDEBAR -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <!-- Power Button at Top Left -->
+                <div class="power-btn" id="logoutTrigger">
+                    <i class="fas fa-power-off"></i>
+                </div>
+                
+                <!-- Consistent AquaFlow Branding -->
+                <div class="logo">
+                    <div class="logo-box">
+                        <i class="fas fa-droplet"></i>
+                    </div>
+                    <span>Aqua<span>Flow</span></span>
+                </div>
+            </div>
+
+            <nav class="nav-menu">
+                <a href="#" class="nav-item active">
+                    <i class="fas fa-th-large"></i> <span>Dashboard</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-shopping-cart"></i> <span>Orders</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-box"></i> <span>Products</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-truck"></i> <span>Shipping</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-credit-card"></i> <span>Payments</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-cog"></i> <span>Settings</span>
+                </a>
+            </nav>
+
+            <!-- Sidebar Support Card -->
+            <div class="sidebar-footer">
+                <div class="support-card">
+                    <p>Customer Support</p>
+                    <button class="btn-support">Connect Now</button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- MAIN CONTENT AREA -->
+        <main class="main-content">
+            
+            <!-- TOP NAVBAR -->
+            <header class="navbar">
+                <div class="nav-left">
+                    <div class="revenue-display">
+                        <small>Total Revenue</small>
+                        <h3>$ 45,365.00 <span class="trend-up"><i class="fas fa-caret-up"></i> 12%</span></h3>
+                    </div>
+                </div>
+
+                <div class="nav-right">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search orders, stations...">
+                    </div>
+                    
+                    <div class="nav-actions">
+                        <!-- Messages -->
+                        <div class="dropdown">
+                            <i class="far fa-comment-dots icon-btn" id="msgBtn"></i>
+                            <div class="dropdown-content" id="msgDropdown">
+                                <div class="dropdown-header">Messages</div>
+                                <div class="dropdown-item">Waiting for order #1224</div>
+                                <div class="dropdown-item">Customer requested refill</div>
+                            </div>
+                        </div>
+
+                        <!-- Notifications -->
+                        <div class="dropdown">
+                            <i class="far fa-bell icon-btn" id="notifBtn"></i>
+                            <div class="dropdown-content" id="notifDropdown">
+                                <div class="dropdown-header">Notifications</div>
+                                <div class="dropdown-item">New order received</div>
+                                <div class="dropdown-item">System update completed</div>
+                            </div>
+                        </div>
+
+                        <!-- Profile -->
+                        <div class="profile-zone dropdown" id="profileBtn">
+                            <img src="https://placehold.co/100x100/334155/ffffff?text=S" alt="Profile" class="profile-img">
+                            <div class="dropdown-content" id="profileDropdown">
+                                <div class="dropdown-header">Station Admin</div>
+                                <a href="#" class="dropdown-item">My Account</a>
+                                <a href="#" class="dropdown-item">Settings</a>
+                                <hr>
+                                <a href="#" class="dropdown-item text-danger">Logout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- STATS SUMMARY CARDS -->
+            <section class="stats-row">
+                <div class="stat-card blue-card">
+                    <div class="stat-info">
+                        <p>Shipped orders</p>
+                        <h1>67</h1>
+                    </div>
+                    <i class="fas fa-truck-loading"></i>
+                </div>
+                <div class="stat-card pink-card">
+                    <div class="stat-info">
+                        <p>Pending orders</p>
+                        <h1>09</h1>
+                    </div>
+                    <i class="fas fa-clock"></i>
+                </div>
+                <div class="stat-card purple-card">
+                    <div class="stat-info">
+                        <p>New orders</p>
+                        <h1>35</h1>
+                    </div>
+                    <i class="fas fa-shopping-bag"></i>
+                </div>
+            </section>
+
+            <!-- INBOX AND TRENDS GRID -->
+            <div class="data-grid">
+                <!-- Inbox Section -->
+                <section class="inbox-section card">
+                    <div class="card-header">
+                        <h3>Inbox</h3>
+                        <a href="#" class="view-link">View details</a>
+                    </div>
+                    <div class="inbox-list">
+                        <div class="inbox-item">
+                            <p>Waiting for order #1224</p>
+                            <span class="time">4:20</span>
+                        </div>
+                        <div class="inbox-item">
+                            <p>Customer requested refill</p>
+                            <span class="time">11:37</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Interactive Today's Trend Section -->
+                <section class="sales-section card">
+                    <div class="card-header">
+                        <h3>Today's Trends</h3>
+                        <div class="legend">
+                            <span class="dot today"></span> Today
+                            <span class="dot yesterday"></span> Yesterday
+                        </div>
+                    </div>
+                    <!-- Chart with Interactive Hover Logic -->
+                    <div class="chart-container" id="trendChartContainer">
+                        <!-- Floating value on hover -->
+                        <div id="chartTooltip" class="chart-tooltip"></div>
+                        <!-- Vertical line tracker -->
+                        <div id="chartTracker" class="chart-tracker"></div>
+                        
+                        <svg viewBox="0 0 400 150" class="svg-chart" id="trendSvg">
+                            <!-- Main Data Path -->
+                            <path id="trendPath" d="M0 120 Q 50 130, 100 80 T 200 60 T 300 100 T 400 20" fill="none" stroke="#6366f1" stroke-width="3" />
+                            <!-- Comparison Path -->
+                            <path d="M0 130 Q 50 140, 100 90 T 200 100 T 300 120 T 400 50" fill="none" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="5,5" />
+                        </svg>
+                    </div>
+                </section>
+            </div>
+
+            <!-- RECENT ACTIVITY SECTION -->
+            <section class="activity-section card">
+                <div class="card-header">
+                    <h3>Recent Activity</h3>
+                    <a href="#" class="view-link">View all</a>
+                </div>
+                <table class="activity-table">
+                    <thead>
+                        <tr>
+                            <th>Activity Description</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Confirm order update</td>
+                            <td><span class="badge yellow">Pending</span></td>
+                            <td><button class="btn-table edit-btn">Edit</button></td>
+                        </tr>
+                        <tr>
+                            <td>Finish shipping update</td>
+                            <td><span class="badge orange">Action</span></td>
+                            <td><button class="btn-table edit-btn">Edit</button></td>
+                        </tr>
+                        <tr>
+                            <td>Creation new order</td>
+                            <td><span class="badge green">New</span></td>
+                            <td><button class="btn-table edit-btn">Edit</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+
+    <!-- REUSABLE MODAL -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">Activity Details</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p id="modalBodyText">Detailed information about this specific operational task.</p>
+                <div class="form-group" style="margin-top: 20px;">
+                    <label>Operational Status</label>
+                    <select style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #e2e8f0; margin-top: 10px;">
+                        <option>Active</option>
+                        <option>Completed</option>
+                        <option>On Hold</option>
+                    </select>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-close">Cancel</button>
+                <button class="btn-primary" style="background: #0ea5e9; border: none; padding: 10px 20px; border-radius: 8px; color: white; cursor: pointer;">Save Changes</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- External Script -->
+    <script src="script/seller.frontpage.js"></script>
+</body>
+</html>
